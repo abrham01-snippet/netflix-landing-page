@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<style>
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none; /* Hides the scrollbar */
+}
+.hide-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+</style>
+</head>
+<body class="bg-dark">
+    <body>
+    <!-- The Global Blurred Background -->
+    <video autoplay loop muted playsinline class="position-fixed top-0 start-0 w-100 h-100" style="object-fit: cover; z-index: -10; filter: blur(40px) brightness(0.6); transform: scale(1.1);">
+        <source src="././medias/Money-Heist-Korea-Trailer.mp4" type="video/mp4">
+    </video>
+    
+<header class="d-flex bg-dark  py-2 justify-content-between align-items-center">
+    <div class="navbar-brand px-3 text-success fw-bold fs-1 ">Netflix</div>
+    <a class="nav-link text-light px-5" href="#">Sign In</a>
+</header>
+
+<!-- navigation -->
+
+<section class="navigation justify-content-center  d-flex mb-4 sticky-top" id="navigation">
+
+  <div class="d-flex gap-3 bg-black bg-opacity-75 rounded-pill px-3 py-2"> 
+       <a class="nav-link text-light" href="#">Episodes</a>
+       <a class="nav-link text-light" href="#">More to Watch</a>
+       <a class="nav-link text-light" href="#">Plans</a>
+  </div>
+
+</section>
+
+
+
+<!-- Hero Section -->
+  <section class="hero " id="hero">
+    
+    <!-- The Absolute Video Background -->
+<div class="container position-relative overflow-hidden rounded-4 mt-4" style="height: 70vh;">
+
+    <video autoplay loop muted playsinline class="position-absolute top-50 start-50 translate-middle w-100 h-100" style="object-fit: cover; z-index: -1; opacity: 0.9;">
+        <source src="././medias/Money-Heist-Korea-Trailer.mp4" type="video/mp4">
+    </video>
+
+
+    <!-- The Gradient Overlay -->
+<div class="position-absolute top-0 start-0 w-100 h-100" 
+     style="background: linear-gradient(to right, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 60%), linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 40%); z-index: 0;">
+</div>
+    <!-- The Main Overlay Content (Title, Input, Join Now) -->
+
+<div class="container position-relative z-index-1 h-100 d-flex flex-row align-items-end pb-1">      
+      <div class="row">
+    
+        <div class="col-md-6"> 
+<h1 class="text-success fw-bold display-5" style="font-family: 'Cinzel Decorative', serif;">Money Heist:<br>Korea</h1>
+          <div class="d-flex gap-2 mt-4 flex-column">
+
+            <input type="email" class="form-control bg-dark text-light border-secondary rounded-pill" placeholder="Email address" style="max-width: 300px;">
+            <!-- Join Now Button -->
+            <button class="btn btn-success px-4 fw-bold rounded-pill">Join Now</button>
+          </div>
+          <p class="text-light mt-2 small">Endless entertainment starting at USD 2.99</p>
+        </div>
+      </div>
+
+    </div>
+</div>
+
+  </section>
+
+  <!--  The Description Box -->
+
+  <section class="container mt-4">
+    <div class="bg-dark bg-opacity-50 p-4 text-light rounded-4">
+      <h3 class="fw-bold">Money Heist: Korea – Joint Economic Area</h3>
+      <p class="small text-secondary fw-bold">2022 &bull; 1 Season &bull; 18+ &bull; Crime Thriller</p>
+      
+      <div class="row">
+        <div class="col-md-8">
+          <p>As North and South Korea stand on the brink of peaceful reunification, a genius strategist known as the Professor recruits a skilled crew of top-tier thieves from both sides to pull off a massive heist at the Unified Korea Mint.</p>
+        </div>
+        <div class="col-md-4 border-start border-secondary pl-3">
+          <p class="small"><span class="text-secondary">Starring:</span> Yoo Ji-tae, Kim Yunjin, Park Hae-soo, Jeon Jong-seo</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Episodes Section -->
+
+<section class="container mt-5 text-light" id="episodes">
+  <h3 class="fw-bold mb-3">Episodes</h3>
+
+  <div class="position-relative">
+    
+    <!-- Left Button -->
+    <button class="btn btn-dark rounded-circle position-absolute top-50 start-0 translate-middle-y z-3 opacity-75" onclick="scrollRow('episodesTrack',-300)">&#10094;</button>
+
+    <div id="episodesTrack" class="d-flex flex-nowrap overflow-x-auto gap-3 pb-4 hide-scrollbar">
+
+       <!-- Episode Card 1 -->
+        
+    <div class="card bg-dark text-light border-secondary flex-shrink-0" style="width: 18rem;">
+      <img src="./medias/eps1.jpg" class="card-img-top" alt="..." style="aspect-ratio: 16/9; object-fit: cover;">
+      <div class="card-body">
+        <h5 class="card-title">Episode 1</h5>
+        <p class="card-text small text-secondary">The Professor recruits a crew of outcasts to infiltrate the Unified Korea Mint, but the hostages prove harder to control than expected.</p>
+      </div>
+    </div>
+
+       <div class="card bg-dark text-light border-secondary flex-shrink-0" style="width: 18rem;">
+      <img src="./medias/eps2.jpg" class="card-img-top" alt="..." style="aspect-ratio: 16/9; object-fit: cover;">
+      <div class="card-body">
+        <h5 class="card-title">Episode 2</h5>
+        <p class="card-text small text-secondary">As the police assemble a task force outside, Berlin takes a heavy-handed approach to leadership inside, causing friction with Tokyo.</p>
+      </div>
+    </div>
+
+      <div class="card bg-dark text-light border-secondary flex-shrink-0" style="width: 18rem;">
+      <img src="./medias/eps3.jpg" class="card-img-top" alt="..." style="aspect-ratio: 16/9; object-fit: cover;">
+      <div class="card-body">
+        <h5 class="card-title">Episode 3 </h5>
+        <p class="card-text small text-secondary">A sudden gunshot rings out, forcing Inspector Seon Woo-jin to negotiate directly with the Professor to prevent a bloodbath.</p>
+      </div>
+    </div>
+
+
+      <div class="card bg-dark text-light border-secondary flex-shrink-0" style="width: 18rem;">
+      <img src="./medias/eps4.jpg" class="card-img-top" alt="..." style="aspect-ratio: 16/9; object-fit: cover;">
+      <div class="card-body">
+        <h5 class="card-title">Episode 4</h5>
+        <p class="card-text small text-secondary">The crew starts printing the untraceable currency while a secret alliance forms among the hostages to stage a daring escape.</p>
+      </div>
+    </div>
+
+
+      <div class="card bg-dark text-light border-secondary flex-shrink-0" style="width: 18rem;">
+      <img src="./medias/eps5.jpg" class="card-img-top" alt="..."style="aspect-ratio: 16/9; object-fit: cover;">
+      <div class="card-body">
+        <h5 class="card-title">Episode 5</h5>
+        <p class="card-text small text-secondary">Tensions boil over when a hostage's identity is revealed, and Woo-jin realizes the thieves' plan is much bigger than a simple robbery.</p>
+      </div>
+    </div>
+
+      <div class="card bg-dark text-light border-secondary flex-shrink-0" style="width: 18rem;">
+      <img src="./medias/eps6.jpg" class="card-img-top" alt="..." style="aspect-ratio: 16/9; object-fit: cover;">
+      <div class="card-body">
+        <h5 class="card-title">Episode 6</h5>
+        <p class="card-text small text-secondary">With the police closing in and the team fracturing, the Professor must execute a risky backup plan to get the money—and his people—out.</p>
+      </div>
+    </div>
+
+    </div>
+
+    <!-- Right Button -->
+    <button class="btn btn-dark rounded-circle position-absolute top-50 end-0 translate-middle-y z-3 opacity-75" onclick="scrollRow('episodesTrack', 300)">&#10095;</button>
+
+  </div>
+
+<!-- The more details  -->
+
+<h3 class="mt-5 mb-3">More Details</h3>
+
+<div class="row g-4 mb-4">  
+  <div class="col-12 col-md-6 col-lg-3">
+  <div class="card bg-dark h-100 text-light border-secondary">
+  <div class="card-body">
+    <p class="card-title fw-bold">Watch Offline</p>
+    <p class="card-text">Available to download</p>
+
+     <p class="card-title fw-bold">Genres</p>
+     <p class="card-text">Korean, Crime TV Shows, TV Thrillers</p>
+
+     <p class="card-title fw-bold">This show is...</p>
+     <p class="card-text">Exciting, Suspenseful, Thriller, Ensemble, Heist, Korean, Mind Game, TV</p>
+  </div>
+</div>
+</div>
+
+ <div class="col-12 col-md-6 col-lg-3">
+<div class="card bg-dark h-100 text-light border-secondary">
+  <div class="card-body">
+    <p class="card-title fw-bold">About the Show</p>
+    <p class="card-text">Money Heist: Korea – Joint Economic Area</p>
+
+     <p class="card-title fw-bold">Release Year</p>
+     <p class="card-text">2022</p>
+
+     <p class="card-title fw-bold">Creators</p>
+     <p class="card-text">Kim Hong-sun, Ryu Yong-jae, Kim Hwan-chae</p>
+  </div>
+</div>
+</div>
+
+<div class="col-12 col-md-6 col-lg-3">
+ <div class="card h-100 bg-dark text-light border-secondary">
+  <div class="card-body">
+    <p class="card-title fw-bold">Audio</p>
+    <p class="card-text">English, Korean - Audio Description, Korean [Original]</p>
+
+     <p class="card-title fw-bold">Subtitles</p>
+     <p class="card-text">English, Korean</p>
+
+  </div>
+</div>
+</div>
+
+<div class="col-12 col-md-6 col-lg-3">
+
+ <div class="card bg-dark h-100 text-light border-secondary">
+  <div class="card-body">
+    <p class="card-title fw-bold">Casts</p>
+    <p class="card-text">Yoo Ji-tae, Kim Yunjin, Park Hae-soo, Jun Jong-seo, Lee Won-jong, Park Myung-hoon, Kim Seung-o, Kim Ji-hun, Jang Yoon-ju, Lee Joo-been</p>
+     
+  </div>
+</div>
+
+
+</div>
+</div>
+
+</section>
+
+<!-- More to Watch -->
+
+<section class="container mt-5 text-light">
+  <h3 class="fw-bold mb-3">You Might Also Like</h3>
+
+  <div class="position-relative">
+    
+    <!-- Left Button -->
+    <button class="btn btn-dark rounded-circle position-absolute top-50 start-0 translate-middle-y z-3 opacity-75" onclick="scrollRow('moreToWatchTrack', -300)">&#10094;</button>
+
+    <!-- The Horizontal Scrolling Track (Notice the new ID and hide-scrollbar class) -->
+    <div id="moreToWatchTrack" class="d-flex flex-nowrap overflow-x-auto gap-3 pb-4 hide-scrollbar">
+        
+      <div class="card bg-dark text-light border-secondary flex-shrink-0" style="width: 11rem;">
+      <img src="./medias/eps1.jpg" class="card-img-top" alt="..." style="aspect-ratio: 2/3; object-fit: cover;">
+    </div>
+
+        <div class="card bg-dark text-light border-secondary flex-shrink-0" style="width: 11rem;">
+      <img src="./medias/eps1.jpg" class="card-img-top" alt="..." style="aspect-ratio: 2/3; object-fit: cover;">
+    </div>
+
+      <div class="card bg-dark text-light border-secondary flex-shrink-0" style="width: 11rem;">
+      <img src="./medias/eps1.jpg" class="card-img-top" alt="..." style="aspect-ratio: 2/3; object-fit: cover;">
+    </div>
+
+
+       <div class="card bg-dark text-light border-secondary flex-shrink-0" style="width: 11rem;">
+      <img src="./medias/eps1.jpg" class="card-img-top" alt="..." style="aspect-ratio: 2/3; object-fit: cover;">
+    </div>
+
+  <div class="card bg-dark text-light border-secondary flex-shrink-0" style="width: 11rem;">
+      <img src="./medias/eps1.jpg" class="card-img-top" alt="..." style="aspect-ratio: 2/3; object-fit: cover;">
+    </div>
+
+      <div class="card bg-dark text-light border-secondary flex-shrink-0" style="width: 11rem;">
+      <img src="./medias/eps1.jpg" class="card-img-top" alt="..." style="aspect-ratio: 2/3; object-fit: cover;">
+    </div>
+
+     <div class="card bg-dark text-light border-secondary flex-shrink-0" style="width: 11rem;">
+      <img src="./medias/eps1.jpg" class="card-img-top" alt="..." style="aspect-ratio: 2/3; object-fit: cover;">
+    </div>
+
+     <div class="card bg-dark text-light border-secondary flex-shrink-0" style="width: 11rem;">
+      <img src="./medias/eps1.jpg" class="card-img-top" alt="..." style="aspect-ratio: 2/3; object-fit: cover;">
+    </div>
+
+    </div>
+
+    <!-- Right Button -->
+    <button class="btn btn-dark rounded-circle position-absolute top-50 end-0 translate-middle-y z-3 opacity-75" onclick="scrollRow('moreToWatchTrack', 300)">&#10095;</button>
+
+  </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+   <script>
+  function scrollRow(trackId, distance) {
+    const track = document.getElementById(trackId);
+    track.scrollBy({
+      left: distance,
+      behavior: 'smooth'
+    });
+  }
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
